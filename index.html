@@ -17,7 +17,7 @@
         <link href="assets/css/main.css" rel="stylesheet">
         <link rel="icon" href="assets/images/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        
+
     </head>
 
     <body>
@@ -38,60 +38,30 @@
                         <div class="btn-group-vertical custom_btn animated slideinright">
                             <div id="about" class="btn btn-rabbit">About</div>
                             <div id="work" class="btn btn-rabbit">Work</div>
+                            <div id="art" class="btn btn-rabbit">Art</div>
                             <div id="contact" class="btn btn-rabbit">Contact</div>
                         </div>      
                         <div class="social">
-                            <a href="https://github.com/HackHussy"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/in/m-skarzynski/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
+@@ -107,6 +108,36 @@
+            </div>    
+        </div>                                                                 <!-- Work ends here  -->
 
-                
-            </div>
-        </div>                                                      <!-- index ends here -->
-
-        <div id="about_scroll" class="pages ">                      <!-- about strats here  -->
+        <div id="art_scroll" class="pages">                                  <!-- Art starts here -->
             <div class="container main">
                 <div class="row">
-                    <div class="col-md-6 left" id="about_left">
-                        <img class="img-responsive img-rabbit" src="assets/images/about.jpg">
-                    </div>
-
-                    <div class="col-md-6 right" id="about_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to home </a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>About</h2>
-                            <div class="marker">a</div>
-                        </div>
-                        <p class='subtitle'>My name is Matt, I am 23, I work in IT and Art 
-                        </p>
-                        <p class="info">My background includes enterprise IT support, hardware lifecycle management, software and network troubleshooting across diverse environments.
-Beyond IT, I have a strong interest in Art. In my free time, I work with 3D & 2D software to create animations and assets, I also use DaVinci Resolve plus Adobe Suite for post-production, and Reaper for sound design and audio processing.
-Outside of that, I also play guitar, bass and skateboard and create or fix mods for games</p>  
-                    </div>
-                </div>
-            </div>            
-        </div>                                                                <!-- About ends here -->
-
-
-        
-        <div id="work_scroll" class="pages">                                  <!-- Work starts here -->
-            <div class="container main">
-                <div class="row">
-                    <div class="col-md-6" id="work_left">
-                        <div id="owl-demo" class="owl-carousel owl-theme">
-                            <div class="item"><img class="img-responsive img-rabbit" src="assets/images/work.jpg"></div>
+                    <div class="col-md-6" id="art_left">
+                        <div id="owl-demo-art" class="owl-carousel owl-theme">
+                            <div class="item"><img class="img-responsive img-rabbit" src="assets/images/work.jpg"></div> <!-- Change these to art-specific images -->
                             <div class="item"><img class="img-responsive img-rabbit" src="assets/images/home.jpg"></div>
                             <div class="item"><img class="img-responsive img-rabbit" src="assets/images/contact.jpg"></div>
                         </div>
                     </div>
 
-                    <div class="col-md-6" id="work_right">
+                    <div class="col-md-6" id="art_right">
                         <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to Home </a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>Work</h2>
-                            <div class="marker">w</div>
+                        <div id="watermark-art">
+                            <h2 class="page-title" text-center>Art</h2>
+                            <div class="marker">a</div> <!-- Changed to 'a' for art; adjust if needed -->
                         </div>
                         <p class='subtitle'>
                         </p>
@@ -101,57 +71,17 @@ My workspace is built around stability, flexibility, and experimentation.
 
 I work primarily in a Windows-based environment with Linux systems for testing and learning. Virtualization plays an important role in my setup, allowing me to simulate networks, test configurations, and experiment safely without impacting production environments.
 
-I maintain structured backups and versioned project files to ensure reliability and consistency across both technical and creative work.</p>
+I maintain structured backups and versioned project files to ensure reliability and consistency across both technical and creative work.</p> <!-- Customize this text for art -->
                     </div>
                 </div>
             </div>    
-        </div>                                                                 <!-- Work ends here  -->
-
+        </div>                                                                 <!-- Art ends here  -->
 
         <div id="contact_scroll" class="pages">                             <!-- Contact starts here -->
             <div class="container main">
-                <div class="row">
-                    <div class="col-md-6 left" id="contact_left">
-                        <img class="img-responsive img-rabbit" src="assets/images/contact.jpg">
-                    </div>
-
-                    <div class="col-md-6 right" id="contact_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to Home </a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>Contact</h2>
-                            <div class="marker">c</div>
-                        </div>
-                        <p class='subtitle'>
-                        </p>
-                        <!-- form -->
-<form class="form_edit" action="https://formspree.io/f/xdaldrwg" method="POST">
-    <div class="form-group">
-        <input type="text" name="name" class="form-control" id="exampleInputName" placeholder="Name" required>
-    </div>
-    <div class="form-group">
-        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
-    </div>
-    <div class="form-group">
-        <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
-    </div>
-    <!-- Optional: Hidden field for reply-to -->
-    <input type="hidden" name="_replyto" value="your-email@example.com">
-    <button type="submit" class="btn btn-rabbit submit">Send Message</button>
-</form>
-                    </div>
-                </div>
-            </div>
-       
-            <footer class="text-center">
-                <div class="container bottom">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p>Made with <i class="fa fa-heartbeat" aria-hidden="true"></i> by <a href="https://themewagon.com/">Themewagon</a></p>
-                        </div>
-                    </div>
-                </div>
+@@ -153,40 +184,8 @@
             </footer>
-            
+
         </div>                                                              <!-- Contact ends here -->
        <div id="art_scroll" class="pages">                                  <!-- Art starts here -->
             <div class="container main">
@@ -185,9 +115,8 @@ I maintain structured backups and versioned project files to ensure reliability 
         </div>                                                                 <!-- Art ends here  -->
 
 
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
-</html>
